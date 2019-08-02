@@ -1,0 +1,15 @@
+C:\FMS_Project\380816\WebAPI\Outreach_WebAPI\Outreach_WebAPI\bin\Debug\netcoreapp2.1\Outreach_WebAPI.deps.json
+C:\FMS_Project\380816\WebAPI\Outreach_WebAPI\Outreach_WebAPI\bin\Debug\netcoreapp2.1\Outreach_WebAPI.runtimeconfig.json
+C:\FMS_Project\380816\WebAPI\Outreach_WebAPI\Outreach_WebAPI\bin\Debug\netcoreapp2.1\Outreach_WebAPI.runtimeconfig.dev.json
+C:\FMS_Project\380816\WebAPI\Outreach_WebAPI\Outreach_WebAPI\bin\Debug\netcoreapp2.1\Outreach_WebAPI.dll
+C:\FMS_Project\380816\WebAPI\Outreach_WebAPI\Outreach_WebAPI\bin\Debug\netcoreapp2.1\Outreach_WebAPI.pdb
+C:\FMS_Project\380816\WebAPI\Outreach_WebAPI\Outreach_WebAPI\obj\Debug\netcoreapp2.1\Outreach_WebAPI.csprojAssemblyReference.cache
+C:\FMS_Project\380816\WebAPI\Outreach_WebAPI\Outreach_WebAPI\obj\Debug\netcoreapp2.1\Outreach_WebAPI.csproj.CoreCompileInputs.cache
+C:\FMS_Project\380816\WebAPI\Outreach_WebAPI\Outreach_WebAPI\obj\Debug\netcoreapp2.1\Outreach_WebAPI.RazorAssemblyInfo.cache
+C:\FMS_Project\380816\WebAPI\Outreach_WebAPI\Outreach_WebAPI\obj\Debug\netcoreapp2.1\Outreach_WebAPI.RazorAssemblyInfo.cs
+C:\FMS_Project\380816\WebAPI\Outreach_WebAPI\Outreach_WebAPI\obj\Debug\netcoreapp2.1\Outreach_WebAPI.AssemblyInfoInputs.cache
+C:\FMS_Project\380816\WebAPI\Outreach_WebAPI\Outreach_WebAPI\obj\Debug\netcoreapp2.1\Outreach_WebAPI.AssemblyInfo.cs
+C:\FMS_Project\380816\WebAPI\Outreach_WebAPI\Outreach_WebAPI\obj\Debug\netcoreapp2.1\Outreach_WebAPI.RazorTargetAssemblyInfo.cache
+C:\FMS_Project\380816\WebAPI\Outreach_WebAPI\Outreach_WebAPI\obj\Debug\netcoreapp2.1\Outreach_WebAPI.dll
+C:\FMS_Project\380816\WebAPI\Outreach_WebAPI\Outreach_WebAPI\obj\Debug\netcoreapp2.1\Outreach_WebAPI.pdb
+C:\FMS_Project\380816\WebAPI\Outreach_WebAPI\Outreach_WebAPI\obj\Debug\netcoreapp2.1\UserSecretsAssemblyInfo.cs

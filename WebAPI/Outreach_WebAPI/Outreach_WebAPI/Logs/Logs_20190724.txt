@@ -1,0 +1,185 @@
+INFO  24-45-2019 05:45:46 Microsoft.AspNetCore.Hosting.Internal.WebHost [9] - Request starting HTTP/1.1 DEBUG http://localhost:55065/  0 
+INFO  24-45-2019 05:45:46 Microsoft.AspNetCore.Hosting.Internal.WebHost [10] - Request starting HTTP/1.1 GET http://localhost:44327/api/values   
+INFO  24-45-2019 05:45:46 Microsoft.AspNetCore.Hosting.Internal.WebHost [9] - Request finished in 59.5819ms 200  
+INFO  24-45-2019 05:45:46 Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker [10] - Route matched with {action = "Get", controller = "Values"}. Executing action Outreach_WebAPI.Controllers.ValuesController.Get (Outreach_WebAPI) 
+INFO  24-45-2019 05:45:46 Microsoft.AspNetCore.Authorization.DefaultAuthorizationService [10] - Authorization failed. 
+INFO  24-45-2019 05:45:46 Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker [10] - Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter'. 
+INFO  24-45-2019 05:45:46 Microsoft.AspNetCore.Mvc.ChallengeResult [10] - Executing ChallengeResult with authentication schemes (). 
+INFO  24-45-2019 05:45:46 Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler [10] - AuthenticationScheme: Bearer was challenged. 
+INFO  24-45-2019 05:45:46 Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker [10] - Executed action Outreach_WebAPI.Controllers.ValuesController.Get (Outreach_WebAPI) in 51.7728ms 
+INFO  24-45-2019 05:45:46 Microsoft.AspNetCore.Hosting.Internal.WebHost [10] - Request finished in 425.6665ms 401  
+INFO  24-46-2019 05:46:12 Microsoft.AspNetCore.Hosting.Internal.WebHost [9] - Request starting HTTP/1.1 OPTIONS http://localhost:44327/api/login   
+INFO  24-46-2019 05:46:12 Microsoft.AspNetCore.Cors.Infrastructure.CorsService [9] - Policy execution successful. 
+INFO  24-46-2019 05:46:12 Microsoft.AspNetCore.Hosting.Internal.WebHost [9] - Request finished in 23.7708ms 204  
+INFO  24-46-2019 05:46:12 Microsoft.AspNetCore.Hosting.Internal.WebHost [10] - Request starting HTTP/1.1 POST http://localhost:44327/api/login application/json 39 
+INFO  24-46-2019 05:46:12 Microsoft.AspNetCore.Cors.Infrastructure.CorsService [10] - Policy execution successful. 
+INFO  24-46-2019 05:46:12 Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker [10] - Route matched with {action = "Login", controller = "Login"}. Executing action Outreach_WebAPI.Controllers.LoginController.Login (Outreach_WebAPI) 
+INFO  24-46-2019 05:46:12 Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker [10] - Executing action method Outreach_WebAPI.Controllers.LoginController.Login (Outreach_WebAPI) with arguments (Outreach_WebAPI.Models.TMstrUser) - Validation state: Valid 
+INFO  24-46-2019 05:46:13 Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker [10] - Executed action method Outreach_WebAPI.Controllers.LoginController.Login (Outreach_WebAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 114.8069ms. 
+INFO  24-46-2019 05:46:13 Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor [10] - Executing ObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'. 
+INFO  24-46-2019 05:46:13 Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker [10] - Executed action Outreach_WebAPI.Controllers.LoginController.Login (Outreach_WebAPI) in 233.883ms 
+INFO  24-46-2019 05:46:13 Microsoft.AspNetCore.Hosting.Internal.WebHost [10] - Request finished in 337.4373ms 200 application/json; charset=utf-8 
+INFO  24-46-2019 05:46:13 Microsoft.AspNetCore.Hosting.Internal.WebHost [7] - Request starting HTTP/1.1 OPTIONS http://localhost:44327/api/feedback   
+INFO  24-46-2019 05:46:13 Microsoft.AspNetCore.Cors.Infrastructure.CorsService [7] - Policy execution successful. 
+INFO  24-46-2019 05:46:13 Microsoft.AspNetCore.Hosting.Internal.WebHost [7] - Request finished in 0.4233ms 204  
+INFO  24-46-2019 05:46:13 Microsoft.AspNetCore.Hosting.Internal.WebHost [8] - Request starting HTTP/1.1 GET http://localhost:44327/api/feedback   
+INFO  24-46-2019 05:46:13 Microsoft.AspNetCore.Cors.Infrastructure.CorsService [8] - Policy execution successful. 
+INFO  24-46-2019 05:46:13 Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler [8] - Successfully validated the token. 
+INFO  24-46-2019 05:46:13 Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker [8] - Route matched with {action = "Get", controller = "Feedback"}. Executing action Outreach_WebAPI.Controllers.FeedbackController.Get (Outreach_WebAPI) 
+INFO  24-46-2019 05:46:13 Microsoft.AspNetCore.Authorization.DefaultAuthorizationService [8] - Authorization was successful. 
+INFO  24-46-2019 05:46:13 Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker [8] - Executing action method Outreach_WebAPI.Controllers.FeedbackController.Get (Outreach_WebAPI) - Validation state: Valid 
+INFO  24-46-2019 05:46:13 Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker [12] - Executed action method Outreach_WebAPI.Controllers.FeedbackController.Get (Outreach_WebAPI), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 74.8608ms. 
+INFO  24-46-2019 05:46:13 Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor [12] - Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[Outreach_WebAPI.Models.TTtrnFeedback, Outreach_WebAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'. 
+INFO  24-46-2019 05:46:13 Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker [12] - Executed action Outreach_WebAPI.Controllers.FeedbackController.Get (Outreach_WebAPI) in 91.9349ms 
+INFO  24-46-2019 05:46:13 Microsoft.AspNetCore.Hosting.Internal.WebHost [12] - Request finished in 109.6832ms 200 application/json; charset=utf-8 
+INFO  24-46-2019 05:46:29 Microsoft.AspNetCore.Hosting.Internal.WebHost [8] - Request starting HTTP/1.1 OPTIONS http://localhost:44327/api/events   
+INFO  24-46-2019 05:46:29 Microsoft.AspNetCore.Cors.Infrastructure.CorsService [8] - Policy execution successful. 
+INFO  24-46-2019 05:46:29 Microsoft.AspNetCore.Hosting.Internal.WebHost [8] - Request finished in 0.2135ms 204  
+INFO  24-46-2019 05:46:29 Microsoft.AspNetCore.Hosting.Internal.WebHost [8] - Request starting HTTP/1.1 GET http://localhost:44327/api/events   
+INFO  24-46-2019 05:46:29 Microsoft.AspNetCore.Cors.Infrastructure.CorsService [8] - Policy execution successful. 
+INFO  24-46-2019 05:46:29 Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler [8] - Successfully validated the token. 
+INFO  24-46-2019 05:46:29 Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker [8] - Route matched with {action = "Get", controller = "Events"}. Executing action Outreach_WebAPI.Controllers.EventsController.Get (Outreach_WebAPI) 
+INFO  24-46-2019 05:46:29 Microsoft.AspNetCore.Authorization.DefaultAuthorizationService [8] - Authorization was successful. 
+INFO  24-46-2019 05:46:29 Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker [8] - Executing action method Outreach_WebAPI.Controllers.EventsController.Get (Outreach_WebAPI) - Validation state: Valid 
+INFO  24-46-2019 05:46:29 Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker [8] - Executed action method Outreach_WebAPI.Controllers.EventsController.Get (Outreach_WebAPI), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 15.9531ms. 
+INFO  24-46-2019 05:46:29 Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor [8] - Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[Outreach_WebAPI.Models.TEventSummary, Outreach_WebAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'. 
+INFO  24-46-2019 05:46:29 Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker [8] - Executed action Outreach_WebAPI.Controllers.EventsController.Get (Outreach_WebAPI) in 25.8567ms 
+INFO  24-46-2019 05:46:29 Microsoft.AspNetCore.Hosting.Internal.WebHost [8] - Request finished in 30.8927ms 200 application/json; charset=utf-8 
+INFO  24-46-2019 05:46:31 Microsoft.AspNetCore.Hosting.Internal.WebHost [8] - Request starting HTTP/1.1 GET http://localhost:44327/api/events/EVNT00047261/380816/1   
+INFO  24-46-2019 05:46:31 Microsoft.AspNetCore.Cors.Infrastructure.CorsService [8] - Policy execution successful. 
+INFO  24-46-2019 05:46:31 Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker [8] - Route matched with {action = "Get", controller = "Events"}. Executing action Outreach_WebAPI.Controllers.EventsController.Get (Outreach_WebAPI) 
+INFO  24-46-2019 05:46:31 Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker [8] - Executing action method Outreach_WebAPI.Controllers.EventsController.Get (Outreach_WebAPI) with arguments (EVNT00047261, 380816, 1) - Validation state: Valid 
+INFO  24-46-2019 05:46:31 Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker [8] - Executed action method Outreach_WebAPI.Controllers.EventsController.Get (Outreach_WebAPI), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 34.7807ms. 
+INFO  24-46-2019 05:46:31 Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor [8] - Executing ObjectResult, writing value of type 'Outreach_WebAPI.Models.TEventInformation'. 
+INFO  24-46-2019 05:46:31 Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker [8] - Executed action Outreach_WebAPI.Controllers.EventsController.Get (Outreach_WebAPI) in 43.8423ms 
+INFO  24-46-2019 05:46:31 Microsoft.AspNetCore.Hosting.Internal.WebHost [8] - Request finished in 49.8563ms 200 application/json; charset=utf-8 
+INFO  24-46-2019 05:46:33 Microsoft.AspNetCore.Hosting.Internal.WebHost [10] - Request starting HTTP/1.1 OPTIONS http://localhost:44327/api/feedback   
+INFO  24-46-2019 05:46:33 Microsoft.AspNetCore.Cors.Infrastructure.CorsService [10] - Policy execution successful. 
+INFO  24-46-2019 05:46:33 Microsoft.AspNetCore.Hosting.Internal.WebHost [10] - Request finished in 1.38ms 204  
+INFO  24-46-2019 05:46:33 Microsoft.AspNetCore.Hosting.Internal.WebHost [10] - Request starting HTTP/1.1 GET http://localhost:44327/api/feedback   
+INFO  24-46-2019 05:46:33 Microsoft.AspNetCore.Cors.Infrastructure.CorsService [10] - Policy execution successful. 
+INFO  24-46-2019 05:46:33 Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler [10] - Successfully validated the token. 
+INFO  24-46-2019 05:46:33 Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker [10] - Route matched with {action = "Get", controller = "Feedback"}. Executing action Outreach_WebAPI.Controllers.FeedbackController.Get (Outreach_WebAPI) 
+INFO  24-46-2019 05:46:33 Microsoft.AspNetCore.Authorization.DefaultAuthorizationService [10] - Authorization was successful. 
+INFO  24-46-2019 05:46:33 Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker [10] - Executing action method Outreach_WebAPI.Controllers.FeedbackController.Get (Outreach_WebAPI) - Validation state: Valid 
+INFO  24-46-2019 05:46:33 Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker [10] - Executed action method Outreach_WebAPI.Controllers.FeedbackController.Get (Outreach_WebAPI), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 2.982ms. 
+INFO  24-46-2019 05:46:33 Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor [10] - Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[Outreach_WebAPI.Models.TTtrnFeedback, Outreach_WebAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'. 
+INFO  24-46-2019 05:46:33 Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker [10] - Executed action Outreach_WebAPI.Controllers.FeedbackController.Get (Outreach_WebAPI) in 3.3604ms 
+INFO  24-46-2019 05:46:33 Microsoft.AspNetCore.Hosting.Internal.WebHost [10] - Request finished in 4.449ms 200 application/json; charset=utf-8 
+INFO  24-46-2019 05:46:48 Microsoft.AspNetCore.Hosting.Internal.WebHost [8] - Request starting HTTP/1.1 OPTIONS http://localhost:44327/api/login   
+INFO  24-46-2019 05:46:48 Microsoft.AspNetCore.Cors.Infrastructure.CorsService [8] - Policy execution successful. 
+INFO  24-46-2019 05:46:48 Microsoft.AspNetCore.Hosting.Internal.WebHost [8] - Request finished in 1.1934ms 204  
+INFO  24-46-2019 05:46:48 Microsoft.AspNetCore.Hosting.Internal.WebHost [7] - Request starting HTTP/1.1 POST http://localhost:44327/api/login application/json 39 
+INFO  24-46-2019 05:46:48 Microsoft.AspNetCore.Cors.Infrastructure.CorsService [7] - Policy execution successful. 
+INFO  24-46-2019 05:46:48 Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker [7] - Route matched with {action = "Login", controller = "Login"}. Executing action Outreach_WebAPI.Controllers.LoginController.Login (Outreach_WebAPI) 
+INFO  24-46-2019 05:46:48 Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker [7] - Executing action method Outreach_WebAPI.Controllers.LoginController.Login (Outreach_WebAPI) with arguments (Outreach_WebAPI.Models.TMstrUser) - Validation state: Valid 
+INFO  24-46-2019 05:46:48 Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker [7] - Executed action method Outreach_WebAPI.Controllers.LoginController.Login (Outreach_WebAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 0.9148ms. 
+INFO  24-46-2019 05:46:48 Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor [7] - Executing ObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'. 
+INFO  24-46-2019 05:46:48 Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker [7] - Executed action Outreach_WebAPI.Controllers.LoginController.Login (Outreach_WebAPI) in 3.2613ms 
+INFO  24-46-2019 05:46:48 Microsoft.AspNetCore.Hosting.Internal.WebHost [7] - Request finished in 4.1284ms 200 application/json; charset=utf-8 
+INFO  24-46-2019 05:46:48 Microsoft.AspNetCore.Hosting.Internal.WebHost [8] - Request starting HTTP/1.1 OPTIONS http://localhost:44327/api/feedback   
+INFO  24-46-2019 05:46:48 Microsoft.AspNetCore.Cors.Infrastructure.CorsService [8] - Policy execution successful. 
+INFO  24-46-2019 05:46:48 Microsoft.AspNetCore.Hosting.Internal.WebHost [8] - Request finished in 0.501ms 204  
+INFO  24-46-2019 05:46:48 Microsoft.AspNetCore.Hosting.Internal.WebHost [8] - Request starting HTTP/1.1 GET http://localhost:44327/api/feedback   
+INFO  24-46-2019 05:46:48 Microsoft.AspNetCore.Cors.Infrastructure.CorsService [8] - Policy execution successful. 
+INFO  24-46-2019 05:46:48 Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler [8] - Successfully validated the token. 
+INFO  24-46-2019 05:46:48 Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker [8] - Route matched with {action = "Get", controller = "Feedback"}. Executing action Outreach_WebAPI.Controllers.FeedbackController.Get (Outreach_WebAPI) 
+INFO  24-46-2019 05:46:48 Microsoft.AspNetCore.Authorization.DefaultAuthorizationService [8] - Authorization was successful. 
+INFO  24-46-2019 05:46:48 Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker [8] - Executing action method Outreach_WebAPI.Controllers.FeedbackController.Get (Outreach_WebAPI) - Validation state: Valid 
+INFO  24-46-2019 05:46:48 Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker [7] - Executed action method Outreach_WebAPI.Controllers.FeedbackController.Get (Outreach_WebAPI), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 0.5378ms. 
+INFO  24-46-2019 05:46:48 Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor [7] - Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[Outreach_WebAPI.Models.TTtrnFeedback, Outreach_WebAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'. 
+INFO  24-46-2019 05:46:48 Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker [7] - Executed action Outreach_WebAPI.Controllers.FeedbackController.Get (Outreach_WebAPI) in 0.9013ms 
+INFO  24-46-2019 05:46:48 Microsoft.AspNetCore.Hosting.Internal.WebHost [7] - Request finished in 1.5363ms 200 application/json; charset=utf-8 
+INFO  24-46-2019 05:46:51 Microsoft.AspNetCore.Hosting.Internal.WebHost [8] - Request starting HTTP/1.1 OPTIONS http://localhost:44327/api/login   
+INFO  24-46-2019 05:46:51 Microsoft.AspNetCore.Cors.Infrastructure.CorsService [8] - Policy execution successful. 
+INFO  24-46-2019 05:46:51 Microsoft.AspNetCore.Hosting.Internal.WebHost [8] - Request finished in 0.3716ms 204  
+INFO  24-46-2019 05:46:51 Microsoft.AspNetCore.Hosting.Internal.WebHost [12] - Request starting HTTP/1.1 POST http://localhost:44327/api/login application/json 39 
+INFO  24-46-2019 05:46:51 Microsoft.AspNetCore.Cors.Infrastructure.CorsService [12] - Policy execution successful. 
+INFO  24-46-2019 05:46:51 Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker [12] - Route matched with {action = "Login", controller = "Login"}. Executing action Outreach_WebAPI.Controllers.LoginController.Login (Outreach_WebAPI) 
+INFO  24-46-2019 05:46:51 Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker [12] - Executing action method Outreach_WebAPI.Controllers.LoginController.Login (Outreach_WebAPI) with arguments (Outreach_WebAPI.Models.TMstrUser) - Validation state: Valid 
+INFO  24-46-2019 05:46:51 Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker [12] - Executed action method Outreach_WebAPI.Controllers.LoginController.Login (Outreach_WebAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 0.5961ms. 
+INFO  24-46-2019 05:46:51 Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor [12] - Executing ObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'. 
+INFO  24-46-2019 05:46:51 Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker [12] - Executed action Outreach_WebAPI.Controllers.LoginController.Login (Outreach_WebAPI) in 1.0927ms 
+INFO  24-46-2019 05:46:51 Microsoft.AspNetCore.Hosting.Internal.WebHost [12] - Request finished in 1.5421ms 200 application/json; charset=utf-8 
+INFO  24-46-2019 05:46:51 Microsoft.AspNetCore.Hosting.Internal.WebHost [8] - Request starting HTTP/1.1 OPTIONS http://localhost:44327/api/feedback   
+INFO  24-46-2019 05:46:51 Microsoft.AspNetCore.Cors.Infrastructure.CorsService [8] - Policy execution successful. 
+INFO  24-46-2019 05:46:51 Microsoft.AspNetCore.Hosting.Internal.WebHost [8] - Request finished in 0.3974ms 204  
+INFO  24-46-2019 05:46:51 Microsoft.AspNetCore.Hosting.Internal.WebHost [9] - Request starting HTTP/1.1 GET http://localhost:44327/api/feedback   
+INFO  24-46-2019 05:46:51 Microsoft.AspNetCore.Cors.Infrastructure.CorsService [9] - Policy execution successful. 
+INFO  24-46-2019 05:46:51 Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler [9] - Successfully validated the token. 
+INFO  24-46-2019 05:46:51 Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker [9] - Route matched with {action = "Get", controller = "Feedback"}. Executing action Outreach_WebAPI.Controllers.FeedbackController.Get (Outreach_WebAPI) 
+INFO  24-46-2019 05:46:51 Microsoft.AspNetCore.Authorization.DefaultAuthorizationService [9] - Authorization was successful. 
+INFO  24-46-2019 05:46:51 Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker [9] - Executing action method Outreach_WebAPI.Controllers.FeedbackController.Get (Outreach_WebAPI) - Validation state: Valid 
+INFO  24-46-2019 05:46:51 Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker [9] - Executed action method Outreach_WebAPI.Controllers.FeedbackController.Get (Outreach_WebAPI), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 0.4591ms. 
+INFO  24-46-2019 05:46:51 Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor [9] - Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[Outreach_WebAPI.Models.TTtrnFeedback, Outreach_WebAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'. 
+INFO  24-46-2019 05:46:51 Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker [9] - Executed action Outreach_WebAPI.Controllers.FeedbackController.Get (Outreach_WebAPI) in 1.0902ms 
+INFO  24-46-2019 05:46:51 Microsoft.AspNetCore.Hosting.Internal.WebHost [9] - Request finished in 1.8598ms 200 application/json; charset=utf-8 
+INFO  24-20-2019 22:20:56 Microsoft.AspNetCore.Hosting.Internal.WebHost [47] - Request starting HTTP/1.1 OPTIONS http://localhost:44327/api/login   
+INFO  24-20-2019 22:20:56 Microsoft.AspNetCore.Cors.Infrastructure.CorsService [47] - Policy execution successful. 
+INFO  24-20-2019 22:20:56 Microsoft.AspNetCore.Hosting.Internal.WebHost [47] - Request finished in 0.3506ms 204  
+INFO  24-20-2019 22:20:56 Microsoft.AspNetCore.Hosting.Internal.WebHost [45] - Request starting HTTP/1.1 POST http://localhost:44327/api/login application/json 39 
+INFO  24-20-2019 22:20:56 Microsoft.AspNetCore.Cors.Infrastructure.CorsService [45] - Policy execution successful. 
+INFO  24-20-2019 22:20:56 Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker [45] - Route matched with {action = "Login", controller = "Login"}. Executing action Outreach_WebAPI.Controllers.LoginController.Login (Outreach_WebAPI) 
+INFO  24-20-2019 22:20:56 Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker [45] - Executing action method Outreach_WebAPI.Controllers.LoginController.Login (Outreach_WebAPI) with arguments (Outreach_WebAPI.Models.TMstrUser) - Validation state: Valid 
+INFO  24-20-2019 22:20:56 Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker [45] - Executed action method Outreach_WebAPI.Controllers.LoginController.Login (Outreach_WebAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 8.6806ms. 
+INFO  24-20-2019 22:20:56 Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor [45] - Executing ObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'. 
+INFO  24-20-2019 22:20:56 Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker [45] - Executed action Outreach_WebAPI.Controllers.LoginController.Login (Outreach_WebAPI) in 9.6782ms 
+INFO  24-20-2019 22:20:56 Microsoft.AspNetCore.Hosting.Internal.WebHost [45] - Request finished in 10.3739ms 200 application/json; charset=utf-8 
+INFO  24-20-2019 22:20:56 Microsoft.AspNetCore.Hosting.Internal.WebHost [45] - Request starting HTTP/1.1 OPTIONS http://localhost:44327/api/feedback   
+INFO  24-20-2019 22:20:56 Microsoft.AspNetCore.Cors.Infrastructure.CorsService [45] - Policy execution successful. 
+INFO  24-20-2019 22:20:56 Microsoft.AspNetCore.Hosting.Internal.WebHost [45] - Request finished in 0.3843ms 204  
+INFO  24-20-2019 22:20:56 Microsoft.AspNetCore.Hosting.Internal.WebHost [43] - Request starting HTTP/1.1 GET http://localhost:44327/api/feedback   
+INFO  24-20-2019 22:20:56 Microsoft.AspNetCore.Cors.Infrastructure.CorsService [43] - Policy execution successful. 
+INFO  24-20-2019 22:20:56 Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler [43] - Successfully validated the token. 
+INFO  24-20-2019 22:20:56 Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker [43] - Route matched with {action = "Get", controller = "Feedback"}. Executing action Outreach_WebAPI.Controllers.FeedbackController.Get (Outreach_WebAPI) 
+INFO  24-20-2019 22:20:56 Microsoft.AspNetCore.Authorization.DefaultAuthorizationService [43] - Authorization was successful. 
+INFO  24-20-2019 22:20:56 Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker [43] - Executing action method Outreach_WebAPI.Controllers.FeedbackController.Get (Outreach_WebAPI) - Validation state: Valid 
+INFO  24-20-2019 22:20:56 Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker [45] - Executed action method Outreach_WebAPI.Controllers.FeedbackController.Get (Outreach_WebAPI), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 1.3909ms. 
+INFO  24-20-2019 22:20:56 Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor [45] - Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[Outreach_WebAPI.Models.TTtrnFeedback, Outreach_WebAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'. 
+INFO  24-20-2019 22:20:56 Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker [45] - Executed action Outreach_WebAPI.Controllers.FeedbackController.Get (Outreach_WebAPI) in 1.7939ms 
+INFO  24-20-2019 22:20:56 Microsoft.AspNetCore.Hosting.Internal.WebHost [45] - Request finished in 2.5402ms 200 application/json; charset=utf-8 
+INFO  24-20-2019 22:20:58 Microsoft.AspNetCore.Hosting.Internal.WebHost [47] - Request starting HTTP/1.1 GET http://localhost:44327/api/events/EVNT00047261/380816/1   
+INFO  24-20-2019 22:20:58 Microsoft.AspNetCore.Cors.Infrastructure.CorsService [47] - Policy execution successful. 
+INFO  24-20-2019 22:20:58 Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker [47] - Route matched with {action = "Get", controller = "Events"}. Executing action Outreach_WebAPI.Controllers.EventsController.Get (Outreach_WebAPI) 
+INFO  24-20-2019 22:20:58 Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker [47] - Executing action method Outreach_WebAPI.Controllers.EventsController.Get (Outreach_WebAPI) with arguments (EVNT00047261, 380816, 1) - Validation state: Valid 
+INFO  24-20-2019 22:20:58 Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker [47] - Executed action method Outreach_WebAPI.Controllers.EventsController.Get (Outreach_WebAPI), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 8.5391ms. 
+INFO  24-20-2019 22:20:58 Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor [47] - Executing ObjectResult, writing value of type 'Outreach_WebAPI.Models.TEventInformation'. 
+INFO  24-20-2019 22:20:58 Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker [47] - Executed action Outreach_WebAPI.Controllers.EventsController.Get (Outreach_WebAPI) in 9.1845ms 
+INFO  24-20-2019 22:20:58 Microsoft.AspNetCore.Hosting.Internal.WebHost [47] - Request finished in 10.4767ms 200 application/json; charset=utf-8 
+INFO  24-23-2019 22:23:14 Microsoft.AspNetCore.Hosting.Internal.WebHost [42] - Request starting HTTP/1.1 OPTIONS http://localhost:44327/api/feedback   
+INFO  24-23-2019 22:23:14 Microsoft.AspNetCore.Cors.Infrastructure.CorsService [42] - Policy execution successful. 
+INFO  24-23-2019 22:23:14 Microsoft.AspNetCore.Hosting.Internal.WebHost [42] - Request finished in 0.2965ms 204  
+INFO  24-23-2019 22:23:14 Microsoft.AspNetCore.Hosting.Internal.WebHost [40] - Request starting HTTP/1.1 GET http://localhost:44327/api/feedback   
+INFO  24-23-2019 22:23:14 Microsoft.AspNetCore.Cors.Infrastructure.CorsService [40] - Policy execution successful. 
+INFO  24-23-2019 22:23:14 Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler [40] - Successfully validated the token. 
+INFO  24-23-2019 22:23:14 Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker [40] - Route matched with {action = "Get", controller = "Feedback"}. Executing action Outreach_WebAPI.Controllers.FeedbackController.Get (Outreach_WebAPI) 
+INFO  24-23-2019 22:23:14 Microsoft.AspNetCore.Authorization.DefaultAuthorizationService [40] - Authorization was successful. 
+INFO  24-23-2019 22:23:14 Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker [40] - Executing action method Outreach_WebAPI.Controllers.FeedbackController.Get (Outreach_WebAPI) - Validation state: Valid 
+INFO  24-23-2019 22:23:14 Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker [42] - Executed action method Outreach_WebAPI.Controllers.FeedbackController.Get (Outreach_WebAPI), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 1.193ms. 
+INFO  24-23-2019 22:23:14 Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor [42] - Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[Outreach_WebAPI.Models.TTtrnFeedback, Outreach_WebAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'. 
+INFO  24-23-2019 22:23:14 Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker [42] - Executed action Outreach_WebAPI.Controllers.FeedbackController.Get (Outreach_WebAPI) in 1.7311ms 
+INFO  24-23-2019 22:23:14 Microsoft.AspNetCore.Hosting.Internal.WebHost [42] - Request finished in 2.804ms 200 application/json; charset=utf-8 
+INFO  25-49-2019 01:49:13 Microsoft.AspNetCore.Hosting.Internal.WebHost [34] - Request starting HTTP/1.1 OPTIONS http://localhost:44327/api/login   
+INFO  25-49-2019 01:49:13 Microsoft.AspNetCore.Cors.Infrastructure.CorsService [34] - Policy execution successful. 
+INFO  25-49-2019 01:49:13 Microsoft.AspNetCore.Hosting.Internal.WebHost [34] - Request finished in 0.4756ms 204  
+INFO  25-49-2019 01:49:13 Microsoft.AspNetCore.Hosting.Internal.WebHost [29] - Request starting HTTP/1.1 POST http://localhost:44327/api/login application/json 39 
+INFO  25-49-2019 01:49:13 Microsoft.AspNetCore.Cors.Infrastructure.CorsService [29] - Policy execution successful. 
+INFO  25-49-2019 01:49:13 Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker [29] - Route matched with {action = "Login", controller = "Login"}. Executing action Outreach_WebAPI.Controllers.LoginController.Login (Outreach_WebAPI) 
+INFO  25-49-2019 01:49:13 Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker [29] - Executing action method Outreach_WebAPI.Controllers.LoginController.Login (Outreach_WebAPI) with arguments (Outreach_WebAPI.Models.TMstrUser) - Validation state: Valid 
+INFO  25-49-2019 01:49:13 Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker [29] - Executed action method Outreach_WebAPI.Controllers.LoginController.Login (Outreach_WebAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 5.4081ms. 
+INFO  25-49-2019 01:49:13 Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor [29] - Executing ObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'. 
+INFO  25-49-2019 01:49:13 Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker [29] - Executed action Outreach_WebAPI.Controllers.LoginController.Login (Outreach_WebAPI) in 6.2737ms 
+INFO  25-49-2019 01:49:13 Microsoft.AspNetCore.Hosting.Internal.WebHost [29] - Request finished in 6.7447ms 200 application/json; charset=utf-8 
+INFO  25-49-2019 01:49:13 Microsoft.AspNetCore.Hosting.Internal.WebHost [30] - Request starting HTTP/1.1 OPTIONS http://localhost:44327/api/feedback   
+INFO  25-49-2019 01:49:13 Microsoft.AspNetCore.Cors.Infrastructure.CorsService [30] - Policy execution successful. 
+INFO  25-49-2019 01:49:13 Microsoft.AspNetCore.Hosting.Internal.WebHost [30] - Request finished in 0.4751ms 204  
+INFO  25-49-2019 01:49:13 Microsoft.AspNetCore.Hosting.Internal.WebHost [30] - Request starting HTTP/1.1 GET http://localhost:44327/api/feedback   
+INFO  25-49-2019 01:49:13 Microsoft.AspNetCore.Cors.Infrastructure.CorsService [30] - Policy execution successful. 
+INFO  25-49-2019 01:49:13 Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler [30] - Successfully validated the token. 
+INFO  25-49-2019 01:49:13 Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker [30] - Route matched with {action = "Get", controller = "Feedback"}. Executing action Outreach_WebAPI.Controllers.FeedbackController.Get (Outreach_WebAPI) 
+INFO  25-49-2019 01:49:13 Microsoft.AspNetCore.Authorization.DefaultAuthorizationService [30] - Authorization was successful. 
+INFO  25-49-2019 01:49:13 Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker [30] - Executing action method Outreach_WebAPI.Controllers.FeedbackController.Get (Outreach_WebAPI) - Validation state: Valid 
+INFO  25-49-2019 01:49:13 Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker [30] - Executed action method Outreach_WebAPI.Controllers.FeedbackController.Get (Outreach_WebAPI), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 0.9948ms. 
+INFO  25-49-2019 01:49:13 Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor [30] - Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[Outreach_WebAPI.Models.TTtrnFeedback, Outreach_WebAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'. 
+INFO  25-49-2019 01:49:13 Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker [30] - Executed action Outreach_WebAPI.Controllers.FeedbackController.Get (Outreach_WebAPI) in 2.9764ms 
+INFO  25-49-2019 01:49:13 Microsoft.AspNetCore.Hosting.Internal.WebHost [30] - Request finished in 5.5947ms 200 application/json; charset=utf-8 

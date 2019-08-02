@@ -1,0 +1,86 @@
+<mat-toolbar color="primary">
+  <h1 left>Outreach</h1>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-11">
+        <button mat-button routerLink="/feedbackAll">Feedback</button>
+        <button mat-button routerLink="/eventsAll">Events</button>
+        <button mat-button [matMenuTriggerFor]="menu">Feedback Example</button>
+        <mat-menu #menu="matMenu">
+          <button mat-menu-item routerLink="/feedbackAttn/EVNT00047261/380816">
+            Reg & Attended
+          </button>
+          <button mat-menu-item routerLink="/feedbackCan/EVNT00047261/380815">
+            Reg & Can
+          </button>
+          <button
+            mat-menu-item
+            routerLink="/feedbackNotAtn/EVNT00047261/665665"
+          >
+            Reg & Didn't Participate
+          </button>
+        </mat-menu>
+      </div>
+      <div class="col-sm-1">
+        <button
+          mat-raised-button
+          color="white"
+          mat-button
+          (click)="logOutUser()"
+        >
+          LOGOUT
+        </button>
+      </div>
+    </div>
+  </div>
+</mat-toolbar>
+<mat-toolbar color="info">
+  <span style="font-size: medium">
+    Welcome to Outreach page. Please find the event details below:
+  </span>
+</mat-toolbar>
+<br />
+<div class="container">
+  <mat-table [dataSource]="events" matSort>
+    <ng-container matColumnDef="eventid">
+      <mat-header-cell *matHeaderCellDef mat-sort-header>
+        Event ID
+      </mat-header-cell>
+      <mat-cell *matCellDef="let event"> {{ event.eventid }} </mat-cell>
+    </ng-container>
+    <ng-container matColumnDef="eventname">
+      <mat-header-cell *matHeaderCellDef mat-sort-header>
+        Event Name
+      </mat-header-cell>
+      <mat-cell *matCellDef="let event">
+        {{ event.eventname }}
+      </mat-cell>
+    </ng-container>
+    <ng-container matColumnDef="beneficiaryname">
+      <mat-header-cell *matHeaderCellDef mat-sort-header>
+        Beneficiary Name
+      </mat-header-cell>
+      <mat-cell *matCellDef="let event">
+        {{ event.beneficiaryname }}
+      </mat-cell>
+    </ng-container>
+    <ng-container matColumnDef="councilname">
+      <mat-header-cell *matHeaderCellDef mat-sort-header>
+        Council Name
+      </mat-header-cell>
+      <mat-cell *matCellDef="let event">
+        {{ event.councilname }}
+      </mat-cell>
+    </ng-container>
+    <ng-container matColumnDef="project">
+      <mat-header-cell *matHeaderCellDef mat-sort-header>
+        Project
+      </mat-header-cell>
+      <mat-cell *matCellDef="let event">
+        {{ event.project }}
+      </mat-cell>
+    </ng-container>
+    <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+    <mat-row *matRowDef="let row; columns: displayedColumns"></mat-row>
+  </mat-table>
+</div>

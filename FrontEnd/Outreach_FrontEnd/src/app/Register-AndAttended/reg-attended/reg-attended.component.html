@@ -1,0 +1,44 @@
+<div class="text-center">
+  <mat-toolbar color="primary">
+    <span routerLink="/feedbackAll" style="cursor:pointer">Outreach</span>
+  </mat-toolbar>
+  <mat-card>
+    <mat-card-title> Outreach Event: {{ eventName }} </mat-card-title>
+    <mat-card-content>
+      <p>Hi <strong>{{associateID}}</strong>,</p>
+      <p>
+        Thank you for participating in the event ({{ eventName }}). Please rate
+        your experience below:
+      </p>
+      <br />
+      <form [formGroup]="feedbackForm" (ngSubmit)="onFormSubmit(feedbackForm.value)">
+        <div class="feedbackSelector">
+          <input id="dissatisfied" type="radio" name="feedbackValue" (click)="feedbackChoose('dissatisfied')"/>
+          <label class="smiley-value dissatisfied" for="dissatisfied">
+            <mat-icon style="color: darkred">sentiment_very_dissatisfied</mat-icon>
+          </label>
+          <input id="upset" type="radio" name="feedbackValue" (click)="feedbackChoose('upset')"/>
+          <label class="smiley-value upset" for="upset">
+            <mat-icon style="color: orangered">sentiment_dissatisfied</mat-icon>
+          </label>
+          <input id="ok" type="radio" name="feedbackValue" (click)="feedbackChoose('ok')"/>
+          <label class="smiley-value ok" for="ok">
+            <mat-icon style="color: darkcyan">sentiment_satisfied</mat-icon>
+          </label>
+          <input id="good" type="radio" name="feedbackValue" (click)="feedbackChoose('good')"/>
+          <label class="smiley-value good" for="good">
+            <mat-icon style="color: green">sentiment_very_satisfied</mat-icon>
+          </label>
+        </div>
+        <br />
+        <mat-form-field>
+          <mat-label>Please provide your additional feedback here</mat-label>
+          <textarea formControlName="Feedback" matInput placeholder="Let us know..."></textarea>
+        </mat-form-field>
+        <mat-card-actions>
+          <button mat-raised-button color="primary" mat-button>Submit</button>
+        </mat-card-actions>
+      </form>
+    </mat-card-content>
+  </mat-card>
+</div>

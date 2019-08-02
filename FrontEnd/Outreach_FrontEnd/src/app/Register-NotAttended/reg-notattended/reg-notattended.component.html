@@ -1,0 +1,39 @@
+<div class="text-center">
+<mat-toolbar color="primary">
+  <span routerLink="/feedbackAll" style="cursor:pointer">Outreach</span>  
+</mat-toolbar>
+<!-- Card container that binds all togather -->
+<mat-card>
+  <!-- Title of an Card -->
+  <mat-card-title>
+    Outreach Event: {{ eventName }}
+  </mat-card-title>
+  <!-- Actual content starts from here -->
+  <mat-card-content>
+    <p>Hi <strong>{{associateID}}</strong>,</p>
+    <p>
+      We found that you have registered for the Outreach event and didn't
+      particiapte for the same. Can you please tell us a little more on why you
+      have not participated, so that we can work on to improve the exprerience
+      next time.
+    </p>
+    <div align="center">
+      <form
+        [formGroup]="feedbackForm"
+        (ngSubmit)="onFormSubmit(feedbackForm.value)">
+        <mat-form-field>
+          <mat-label>Please provide your feedback here</mat-label>
+          <textarea
+            formControlName="Feedback"
+            matInput
+            placeholder="Let us know..."
+          ></textarea>
+        </mat-form-field>
+        <mat-card-actions>
+          <button mat-raised-button color="primary" mat-button>Submit</button>
+        </mat-card-actions>
+      </form>
+    </div>
+  </mat-card-content>
+</mat-card>
+</div>

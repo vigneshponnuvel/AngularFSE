@@ -1,0 +1,10 @@
+C:\FMS_Project\380816\BatchProcess\DataImport\DataImport\bin\Debug\DataImport.exe.config
+C:\FMS_Project\380816\BatchProcess\DataImport\DataImport\bin\Debug\DataImport.exe
+C:\FMS_Project\380816\BatchProcess\DataImport\DataImport\bin\Debug\DataImport.pdb
+C:\FMS_Project\380816\BatchProcess\DataImport\DataImport\bin\Debug\EPPlus.dll
+C:\FMS_Project\380816\BatchProcess\DataImport\DataImport\bin\Debug\EPPlus.xml
+C:\FMS_Project\380816\BatchProcess\DataImport\DataImport\obj\Debug\DataImport.csproj.CoreCompileInputs.cache
+C:\FMS_Project\380816\BatchProcess\DataImport\DataImport\obj\Debug\DataImport.csproj.CopyComplete
+C:\FMS_Project\380816\BatchProcess\DataImport\DataImport\obj\Debug\DataImport.exe
+C:\FMS_Project\380816\BatchProcess\DataImport\DataImport\obj\Debug\DataImport.pdb
+C:\FMS_Project\380816\BatchProcess\DataImport\DataImport\obj\Debug\DataImport.csprojAssemblyReference.cache
